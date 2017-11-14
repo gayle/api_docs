@@ -46,3 +46,4 @@ group :development do
 end
 
 gem 'rspec_api_documentation'
+gem "apitome"
