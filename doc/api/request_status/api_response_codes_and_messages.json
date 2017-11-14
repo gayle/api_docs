@@ -1,0 +1,17 @@
+{
+  "resource": "Request Status",
+  "resource_explanation": "Retrieves the current status of the given Request ID",
+  "http_method": "GET",
+  "route": "/api/public/request_status/:id",
+  "description": "API Response Codes and Messages",
+  "explanation": "1000: Request %{id} was successfully created.<br />2000: Missing Parameter: %{param}<br />2001: Invalid Parameter: %{param}<br />2002: An unexpected error occurred: %{message}<br />2003: Request %{id} not found<br />3000: this is a placeholder, replace with your own<br />",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+
+  ]
+}

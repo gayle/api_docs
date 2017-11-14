@@ -1,0 +1,48 @@
+{
+  "resource": "Lob Application",
+  "resource_explanation": "Public API endpoints for creating LOB Application Assets",
+  "http_method": "POST",
+  "route": "api/public/asset/v1/lob_application/activate/:id",
+  "description": "Activate Asset",
+  "explanation": "Activate a Lob Application Asset",
+  "parameters": [
+    {
+      "required": true,
+      "data_type": "STRING(255)",
+      "name": "source_system",
+      "description": "Name of calling system"
+    },
+    {
+      "required": true,
+      "data_type": "STRING(255)",
+      "name": "source_transaction_id",
+      "description": "Transaction ID supplied by calling system"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/public/asset/v1/lob_application/activate/14570",
+      "request_body": "{\"request\":{\"data\":{},\"source_system\":\"Marketplace\",\"source_transaction_id\":\"0934875y2394-8569\"}}",
+      "request_headers": {
+        "Authorization": "Basic TzAwMDA5MToxMjM0NTY=",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"activated\":true}",
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"508b21dbddabe09471bc1f3e7583ef4b\"","Cache-Control":"max-age=0, private, must-revalidate","Set-Cookie":"_rsam_test=efa6519e56b7d319f8081d5730fd5c3a; domain=.example.org; path=/; HttpOnly","X-Request-Id":"13f9aa4fb8268aa9ad3dd0c5a0b055da","X-Runtime":"0.141479","Content-Length":"18"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+}
+  ]
+}

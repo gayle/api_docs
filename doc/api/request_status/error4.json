@@ -1,0 +1,41 @@
+{
+  "resource": "Request Status",
+  "resource_explanation": "Retrieves the current status of the given Request ID",
+  "http_method": "GET",
+  "route": "/api/public/request_status/:id",
+  "description": "Error4",
+  "explanation": "The Rsam team needs to enable this API before it will work.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "This is the ID of the request.  Is either a system request id (e.g. 12345), or a system request id followed by an ordinal representing which Request Item (e.g. 12345-2)"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/public/request_status/5941",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Basic TzAwMDAxODoxMjM0NTY=",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 403,
+      "response_status_text": "Forbidden",
+      "response_body": " ",
+      "response_headers": {"Content-Type":"text/html; charset=utf-8","Access-Control-Allow-Origin":"*","X-UA-Compatible":"IE=Edge,chrome=1","Cache-Control":"no-cache","Set-Cookie":"_rsam_test=baeff0fe7459482077f83f69c85a3e5b; domain=.example.org; path=/; HttpOnly","X-Request-Id":"44662f56c32db7e51849b2bc86a46e15","X-Runtime":"0.074223","Content-Length":"1"},
+      "response_content_type": "text/html; charset=utf-8",
+      "curl": null
+}
+  ]
+}

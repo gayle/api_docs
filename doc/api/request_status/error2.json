@@ -1,0 +1,41 @@
+{
+  "resource": "Request Status",
+  "resource_explanation": "Retrieves the current status of the given Request ID",
+  "http_method": "GET",
+  "route": "/api/public/request_status/:id",
+  "description": "Error2",
+  "explanation": "This happens when an invalid ID and/or Ordinal is passed in.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "This is the ID of the request.  Is either a system request id (e.g. 12345), or a system request id followed by an ordinal representing which Request Item (e.g. 12345-2)"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/public/request_status/5943-9999",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Basic TzAwMDAzODoxMjM0NTY=",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"success\":false,\"errors\":[{\"code\":2003,\"message\":\"Request 5943-9999 not found\"}]}",
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"b710bc46ded310334fe4885326aed80d\"","Cache-Control":"max-age=0, private, must-revalidate","Set-Cookie":"_rsam_test=52ae5341c3b23aeaea2066d2b32da3fb; domain=.example.org; path=/; HttpOnly","X-Request-Id":"f4d18f47b77ec60d4136ae8ee4b99990","X-Runtime":"0.035163","Content-Length":"82"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+}
+  ]
+}

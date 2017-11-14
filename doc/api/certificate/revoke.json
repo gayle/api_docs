@@ -1,0 +1,67 @@
+{
+  "resource": "Certificate Request",
+  "resource_explanation": "Public API endpoints for requesting actions for certificates",
+  "http_method": "POST",
+  "route": "/api/public/cert/v1/certificate_request",
+  "description": "Revoke",
+  "explanation": "Creates a Certificate Revoke Request",
+  "parameters": [
+    {
+      "required": true,
+      "name": "data",
+      "description": "Container object for request specific parameters"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "name": "cert_request_type",
+      "description": "add"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "name": "fid",
+      "description": "Functional ID"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "data_type": "STRING(255)",
+      "name": "reason",
+      "description": "Reason for action"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "data_type": "INTEGER",
+      "name": "serial_number",
+      "description": "The Serial number of the certificate"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/public/cert/v1/certificate_request",
+      "request_body": "{\"request\":{\"data\":{\"fid\":\"O000185\",\"cert_request_type\":\"Revoke\",\"reason\":\"No longer needed\",\"serial_number\":\"98210dj38290cjas8f3892jc89813981v\"},\"requested_for\":\"O000182\"}}",
+      "request_headers": {
+        "Authorization": "Basic TzAwMDE3OToxMjM0NTY=",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"request_id\":5950}",
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"6f4e195bd5e0b6a985f55ff6292022ad\"","Cache-Control":"max-age=0, private, must-revalidate","Set-Cookie":"_rsam_test=458eebe723c59ab6a62b08a0a49e345b; domain=.example.org; path=/; HttpOnly","X-Request-Id":"ce9f07d1fc7199bdca0e0665476892e6","X-Runtime":"0.189935","Content-Length":"19"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+}
+  ]
+}

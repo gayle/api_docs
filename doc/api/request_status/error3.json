@@ -1,0 +1,41 @@
+{
+  "resource": "Request Status",
+  "resource_explanation": "Retrieves the current status of the given Request ID",
+  "http_method": "GET",
+  "route": "/api/public/request_status/:id",
+  "description": "Error3",
+  "explanation": "This is included for troubleshooting only, and should be handled just in case.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "This is the ID of the request.  Is either a system request id (e.g. 12345), or a system request id followed by an ordinal representing which Request Item (e.g. 12345-2)"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/public/request_status/5945",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Basic TzAwMDA1ODoxMjM0NTY=",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"success\":false,\"errors\":[{\"code\":2002,\"message\":\"An unexpected error occurred: #\\u003CRuntimeError: error message goes here\\u003E\"}]}",
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"5cf0eeeea7af5a020634bb0ef121d525\"","Cache-Control":"max-age=0, private, must-revalidate","Set-Cookie":"_rsam_test=fdf4620a74957320a1f18fcc301d71b3; domain=.example.org; path=/; HttpOnly","X-Request-Id":"a42e779665552e18f9aec090f32afbe0","X-Runtime":"0.034700","Content-Length":"135"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+}
+  ]
+}

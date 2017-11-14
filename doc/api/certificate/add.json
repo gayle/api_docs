@@ -1,0 +1,93 @@
+{
+  "resource": "Certificate Request",
+  "resource_explanation": "Public API endpoints for requesting actions for certificates",
+  "http_method": "POST",
+  "route": "/api/public/cert/v1/certificate_request",
+  "description": "Add",
+  "explanation": "Create a new Certificate Request",
+  "parameters": [
+    {
+      "required": true,
+      "name": "data",
+      "description": "Container object for request specific parameters"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "name": "cert_request_type",
+      "description": "add"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "name": "cert_type",
+      "description": "add"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "name": "fid",
+      "description": "Functional ID"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "data_type": "INTEGER",
+      "name": "licenses",
+      "description": "Number of licenses you are requesting"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "data_type": "STRING(255)",
+      "name": "csr",
+      "description": "Valid CSR (SHA256 Encrypted)"
+    },
+    {
+      "required": true,
+      "scope": "data",
+      "name": "cost_center",
+      "description": "Cost Center"
+    },
+    {
+      "required": true,
+      "data_type": "STRING(4000)",
+      "scope": "data",
+      "name": "description",
+      "description": "Description"
+    },
+    {
+      "required": false,
+      "scope": "data",
+      "data_type": "INTEGER(38)",
+      "name": "notify_sealid",
+      "description": "A seal id to send notifications to"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/public/cert/v1/certificate_request",
+      "request_body": "{\"request\":{\"data\":{\"cert_request_type\":\"Add\",\"fid\":\"O000212\",\"licenses\":1,\"cert_type\":\"example\",\"csr\":\"\\u003C\\u003CCSR\\u003E\\u003E\",\"cost_center\":\"12345\",\"description\":\"I am a certificate for JPMCHASE.COM\",\"notify_sealid\":24041},\"requested_for\":\"O000209\"}}",
+      "request_headers": {
+        "Authorization": "Basic TzAwMDIwNjoxMjM0NTY=",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"request_id\":5952}",
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"89f03a9bd405403f88e0691c64bbfba2\"","Cache-Control":"max-age=0, private, must-revalidate","Set-Cookie":"_rsam_test=e4de5a521d6a78ba8557ec241d24db77; domain=.example.org; path=/; HttpOnly","X-Request-Id":"fab79e97703cb1d257911eee507bddb4","X-Runtime":"0.109330","Content-Length":"19"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+}
+  ]
+}

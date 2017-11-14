@@ -1,0 +1,106 @@
+{
+  "resources": [
+    {
+      "name": "Certificate",
+      "explanation": "Public API endpoints for requesting actions for certificates",
+      "examples": [
+        {
+          "description": "Add",
+          "link": "certificate/add.json",
+          "groups": "public",
+          "route": "/api/public/cert/v1/certificate",
+          "method": "post"
+        },
+        {
+          "description": "Renew",
+          "link": "certificate/renew.json",
+          "groups": "public",
+          "route": "/api/public/cert/v1/certificate",
+          "method": "post"
+        },
+        {
+          "description": "Replace",
+          "link": "certificate/replace.json",
+          "groups": "public",
+          "route": "/api/public/cert/v1/certificate",
+          "method": "post"
+        },
+        {
+          "description": "Revoke",
+          "link": "certificate/revoke.json",
+          "groups": "public",
+          "route": "/api/public/cert/v1/certificate",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Application",
+      "explanation": "Public API endpoints for creating Applications",
+      "examples": [
+        {
+          "description": "Create",
+          "link": "application/create.json",
+          "groups": "public",
+          "route": "api/public/asset/v1/application",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Request Status",
+      "explanation": "Retrieves the current status of the given Request ID",
+      "examples": [
+        {
+          "description": "API Response Codes and Messages",
+          "link": "request_status/api_response_codes_and_messages.json",
+          "groups": "public",
+          "route": "/api/public/request_status/:id",
+          "method": "get"
+        },
+        {
+          "description": "Error1",
+          "link": "request_status/error1.json",
+          "groups": "public",
+          "route": "/api/public/request_status/:id",
+          "method": "get"
+        },
+        {
+          "description": "Error2",
+          "link": "request_status/error2.json",
+          "groups": "public",
+          "route": "/api/public/request_status/:id",
+          "method": "get"
+        },
+        {
+          "description": "Error3",
+          "link": "request_status/error3.json",
+          "groups": "public",
+          "route": "/api/public/request_status/:id",
+          "method": "get"
+        },
+        {
+          "description": "Error4",
+          "link": "request_status/error4.json",
+          "groups": "public",
+          "route": "/api/public/request_status/:id",
+          "method": "get"
+        },
+        {
+          "description": "Success1",
+          "link": "request_status/success1.json",
+          "groups": "public",
+          "route": "/api/public/request_status/:id",
+          "method": "get"
+        },
+        {
+          "description": "Success2",
+          "link": "request_status/success2.json",
+          "groups": "public",
+          "route": "/api/public/request_status/:id",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

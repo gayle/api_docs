@@ -1,0 +1,69 @@
+{
+  "resource": "Lob Application",
+  "resource_explanation": "Public API endpoints for creating LOB Application Assets",
+  "http_method": "POST",
+  "route": "api/public/asset/v1/lob_application",
+  "description": "Create Asset",
+  "explanation": "Create a Lob Application",
+  "parameters": [
+    {
+      "required": true,
+      "data_type": "INTEGER(38)",
+      "scope": "data",
+      "name": "seal_id",
+      "description": "Also know as appquest application id"
+    },
+    {
+      "required": true,
+      "data_type": "STRING(255)",
+      "scope": "data",
+      "name": "environment",
+      "description": "One of prepopulated values in DB"
+    },
+    {
+      "required": false,
+      "data_type": "STRING(255)",
+      "scope": "data",
+      "name": "instance",
+      "description": "Name of the asset instance"
+    },
+    {
+      "required": true,
+      "data_type": "STRING(255)",
+      "name": "source_system",
+      "description": "Name of calling system"
+    },
+    {
+      "required": true,
+      "data_type": "STRING(255)",
+      "name": "source_transaction_id",
+      "description": "Transaction ID supplied by calling system"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/public/asset/v1/lob_application",
+      "request_body": "{\"request\":{\"data\":{\"seal_id\":100002,\"environment\":\"Production\",\"instance\":\"Test\"},\"source_system\":\"GAIA Marketplace\",\"source_transaction_id\":\"348t7gp34iu-8347f\"}}",
+      "request_headers": {
+        "Authorization": "Basic TzAwMDExODoxMjM0NTY=",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"asset_id\":14571}",
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","Access-Control-Allow-Origin":"*","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"626e6bdfbfd35cbb9fa5f53a93957c7b\"","Cache-Control":"max-age=0, private, must-revalidate","Set-Cookie":"_rsam_test=7b6d9fdb93250553316125ef3bef8ec8; domain=.example.org; path=/; HttpOnly","X-Request-Id":"e3d92e63156ba79cae37572142cf6f72","X-Runtime":"0.127212","Content-Length":"18"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+}
+  ]
+}
