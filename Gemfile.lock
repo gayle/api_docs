@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/jejacks0n/apitome.git
+  revision: 82fee54e79411844063897dae66e079738d07ff0
+  ref: 82fee54
+  specs:
+    apitome (0.1.0)
+      kramdown
+      railties
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,9 +45,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    apitome (0.2.2)
-      kramdown
-      railties
     arel (6.0.4)
     binding_of_caller (0.7.3)
       debug_inspector (>= 0.0.1)
@@ -176,7 +182,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  apitome
+  apitome!
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
